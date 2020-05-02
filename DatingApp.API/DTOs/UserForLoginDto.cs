@@ -1,4 +1,4 @@
-namespace XaddWeb.API.DTOs
+namespace DatingApp.API.DTOs
 {
     public class UserForLoginDto
     {

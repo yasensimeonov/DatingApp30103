@@ -8,11 +8,10 @@ using DatingApp.API.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using XaddWeb.API.Data;
-using XaddWeb.API.DTOs;
-using XaddWeb.API.Models;
+using DatingApp.API.Data;
+using DatingApp.API.Models;
 
-namespace XaddWeb.API.Controllers
+namespace DatingApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -38,14 +37,13 @@ namespace XaddWeb.API.Controllers
                 return BadRequest("Username already exists");
             }
 
-            var userToCreate = new User
-            {
-                Username = userForRegisterDto.Username
-            };
+            var userToCreate = _mapper.Map<User>(userForRegisterDto);
 
             var createdUser = await _repo.Register(userToCreate, userForRegisterDto.Password);
 
-            return StatusCode(201);
+            var userToReturn = _mapper.Map<UserForDetailedDto>(createdUser);
+
+            return CreatedAtRoute("GetUser", new { controller = "Users", id = createdUser.Id}, userToReturn);
         }
 
         [HttpPost("login")]

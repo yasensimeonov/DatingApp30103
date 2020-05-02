@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace XaddWeb.API.Models
+namespace DatingApp.API.Models
 {
     public class User
     {

@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
-using XaddWeb.API.Data;
-using XaddWeb.API.Models;
+using DatingApp.API.Models;
 
 namespace DatingApp.API.Data
 {

@@ -20,8 +20,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using XaddWeb.API.Data;
-using XaddWeb.API.Helpers;
 
 namespace DatingApp.API
 {

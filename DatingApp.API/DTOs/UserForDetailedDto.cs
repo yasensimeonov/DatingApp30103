@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using XaddWeb.API.Models;
 
 namespace DatingApp.API.DTOs
 {

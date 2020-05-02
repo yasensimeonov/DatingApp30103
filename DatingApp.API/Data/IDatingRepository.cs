@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using XaddWeb.API.Models;
+using DatingApp.API.Models;
 
 namespace DatingApp.API.Data
 {

@@ -2,8 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using XaddWeb.API.Data;
-using XaddWeb.API.Models;
+using DatingApp.API.Models;
 
 namespace DatingApp.API.Data
 {

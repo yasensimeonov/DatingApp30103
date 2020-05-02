@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using XaddWeb.API.Models;
+using DatingApp.API.Models;
 
-namespace XaddWeb.API.Data
+namespace DatingApp.API.Data
 {
     public interface IAuthRepository
     {
