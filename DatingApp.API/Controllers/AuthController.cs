@@ -56,6 +56,9 @@ namespace DatingApp.API.Controllers
 
             if (result.Succeeded)
             {
+                // Assign the new user to the Member role
+                await _userManager.AddToRoleAsync(userToCreate, "Member");
+                
                 return CreatedAtRoute("GetUser", new { controller = "Users", id = userToCreate.Id }, userToReturn);
             }
 
